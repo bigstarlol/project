@@ -1,0 +1,40 @@
+.line {
+    display: flex;
+    border-left: 3px solid teal;
+    width: 2%;
+    margin-left: 2%;
+    box-sizing: border-box;
+}
+
+.home-advertise {
+    margin: 120px 30px 0px;
+    width: 1000px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.home-advertise__book {
+    border: 2px solid var(--personal-sub);
+    padding: 50px 30px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.home-advertise__title {
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top:15px;
+    left: 15px;
+}
+
+.home-advertise__book-picture {
+    height: 100%;
+    width: 100%;    
+}
+
+.home-advertise__book-image {
+    height: 100%;
+    width: 100%;
+}
+
