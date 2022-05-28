@@ -27,29 +27,472 @@
     <main class="main-home">
         <div class="home-status">
             <div class="home-status__study">
-                <h1>참여 중 스터디</h1>
+                <h1 class="home-status__study-name">참여 중 스터디</h1>
                 <div class="home-status__study-boxes">
                     <div class="entered_study">
-                        1
+                        <span class="box-name">한국전력</span>
+                        <i class="fa-solid fa-book-open"></i>
+                        <div class="main-study__icons">
+                            <div class="main-study__icons-date">
+                                <span class="box-date">22/5/30</span>
+                                <span class="box-date">10:30</span>
+                            </div>
+                            <div class="main-study__icons-teammates">
+                                <i class="fa-solid fa-user"></i>
+                                <span>2</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="entered_study">
-                        2
+                        <span class="box-name">한국금융공단</span>
+                        <i class="fa-solid fa-book-open"></i>
+                        <div class="main-study__icons">
+                            <div class="main-study__icons-date">
+                                <span class="box-date">22/5/30</span>
+                                <span class="box-date">10:30</span>
+                            </div>
+                            <div class="main-study__icons-teammates">
+                                <i class="fa-solid fa-user"></i>
+                                <span>6</span>
+                            </div>
+                            
+                        </div>
                     </div>
                     <div class="entered_study">
-                        3
+                        <span class="box-name">남동발전</span>
+                        <i class="fa-solid fa-people-group"></i>
+                        <div class="main-study__icons">
+                            <div class="main-study__icons-date">
+                                <span class="box-date">22/5/30</span>
+                                <span class="box-date">10:30</span>
+                            </div>
+                            <div class="main-study__icons-teammates">
+                                <i class="fa-solid fa-user"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entered_study">
+                        <span class="box-name">경남개발공사</span>
+                        <i class="fa-solid fa-book-open"></i>
+                        <div class="main-study__icons">
+                            <div class="main-study__icons-date">
+                                <span class="box-date">22/5/30</span>
+                                <span class="box-date">10:30</span>
+                            </div>
+                            <div class="main-study__icons-teammates">
+                                <i class="fa-solid fa-user"></i>
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entered_study">
+                        <span class="box-name">안전보건공단</span>
+                        <i class="fa-solid fa-people-group"></i>
+                        <div class="main-study__icons">
+                            <div class="main-study__icons-date">
+                                <span class="box-date">22/5/30</span>
+                                <span class="box-date">10:30</span>
+                            </div>
+                            <div class="main-study__icons-teammates">
+                                <i class="fa-solid fa-user"></i>
+                                <span>3</span>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="home-status__jobopen">
-                <h1>현재 진행 중 채용공고</h1>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                </ul>
+                <h1 class="home-status__study-name">참여 중 채용 일정</h1>
+
+                <div class="home-status__calander">
+                    <div class="home-status__calander-month">
+                        <span><i class="fa-solid fa-caret-left"></i></span>
+                        <input class="home-status__calander-month-select" type="month">
+                        <span><i class="fa-solid fa-caret-right"></i></span>
+                    </div>
+
+                <table class="home-status__jobopen-table">
+                    <thead class="home-status__jobopen-table-head">
+                        <tr class="home-status__jobopen-table-tr">
+                            <th class="home-status__jobopen-table-th">일<span>sun</span></th>
+                            <th class="home-status__jobopen-table-th">월<span>mon</span></th>
+                            <th class="home-status__jobopen-table-th">화<span>tue</span></th>
+                            <th class="home-status__jobopen-table-th">수<span>wen</span></th>
+                            <th class="home-status__jobopen-table-th">목<span>tus</span></th>  
+                            <th class="home-status__jobopen-table-th">금<span>fri</span></th>  
+                            <th class="home-status__jobopen-table-th">토<span>sat</span></th>  
+                        </tr>
+                    </thead>
+                    <tbody class="home-status__jobopen-table-body">
+                        <tr class="home-status__jobopen-table-tr">
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">1</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">2</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">3</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">4</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">5</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">6</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">7</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="home-status__jobopen-table-tr">
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">8</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">9</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">10</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">11</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">12</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">13</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">14</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="home-status__jobopen-table-tr">
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">15</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">16</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">17</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">18</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">19</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">20</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">21</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="home-status__jobopen-table-tr">
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">22</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">23</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">24</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">25</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">26</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">27</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">28</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="home-status__jobopen-table-tr">
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">29</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">30</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td">
+                                <span class="jobopen-table-date">31</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td not-this-month">
+                                <span class="jobopen-table-date">1</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td not-this-month">
+                                <span class="jobopen-table-date">2</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td not-this-month">
+                                <span class="jobopen-table-date">3</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                            <td class="home-status__jobopen-table-td not-this-month">
+                                <span class="jobopen-table-date">4</span>
+                                <ul class="jobopen-table-ul">
+                                    <li class="jobopen-table-list fir-list">한국전력</li>
+                                    <li class="jobopen-table-list sec-list">한국금융공단</li>
+                                    <li class="jobopen-table-list thr-list">남동발전</li>
+                                    <li class="jobopen-table-list for-list">경남개발공사</li>
+                                    <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
             </div>
         </div>
 

@@ -1,0 +1,228 @@
+.main-home {
+    margin: 20px;
+    display: flex;
+    padding-top: 60px;
+    width: 100%;
+}
+
+.home-status {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.home-status__study,
+.home-status__jobopen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+    margin-bottom: 100px;
+    border: 3px solid var(--personal-main);
+
+}
+
+.home-status__study-name {
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top:-25px;
+    left: 15px;
+    background-color: white;
+}
+
+.home-status__study-boxes {
+    display: flex;
+    margin: 50px 0px 80px 0px;
+    box-sizing: border-box;
+}
+
+.entered_study {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--personal-sub);
+    position: relative;
+}
+
+.entered_study .box-name {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: white;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+}
+
+.entered_study .fa-book-open,
+.entered_study .fa-people-group {
+    font-size: 35px;
+    color: var(--personal-main);
+}
+
+.main-study__icons {
+    display: flex;
+    width: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+}
+
+.main-study__icons-date {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.box-date {
+    display: flex;
+    font-size: 5px;
+}
+
+.main-study__icons-teammates {
+    display: flex;
+    position: relative;
+}
+
+.main-study__icons-teammates span {
+    display: flex;
+    font-size: 10px;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    right: -8px;
+    top: -8px;
+}
+
+/* study end*/
+
+.home-status__jobopen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.home-status__calander {
+    margin: 50px 0px 20px 0px;
+}
+
+.home-status__calander-month {
+    display: flex;
+    background-color: var(--personal-main);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+.home-status__calander-month-select {
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    background-color: var(--personal-main);
+}
+
+.home-status__calander-month span {
+    font-size: 30px;
+    color: white;
+}
+
+
+.home-status__jobopen-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--personal-main);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.home-status__jobopen-table-th,
+.home-status__jobopen-table-td {
+    border: 1px solid black;
+    width: 100px;
+}
+
+.home-status__jobopen-table-th {
+    padding: 5px 0px;
+    text-align: center;
+    background-color: var(--personal-sub);
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.home-status__jobopen-table-th span {
+    font-size: 12px;
+    opacity: 0.8;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    box-sizing: border-box;
+}
+
+.home-status__jobopen-table-td {
+    height: 100px;
+}
+
+.jobopen-table-date {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.jobopen-table-ul {
+    margin-top: 5px;
+}
+
+.jobopen-table-list {
+    padding: 1px;
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+
+.fir-list {
+    background-color: teal;
+}
+
+.sec-list {
+    background-color: tomato;
+}
+
+.thr-list {
+    background-color: aquamarine;
+}
+
+.for-list {
+    background-color: antiquewhite;
+}
+
+.fif-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fif-list span {
+    font-size: 8px;
+}
+
+.not-this-month {
+    opacity: 0.3;
+}

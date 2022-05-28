@@ -1,8 +1,17 @@
+/*screens*/
 @import "screens/index.css";
+@import "screens/home-status.css";
 
+
+/*components */
 @import "components/header.css";
 
+
+
+
 @import "reset.css";
+@import "variable.css";
+
 
 body {
     background-color: white;
