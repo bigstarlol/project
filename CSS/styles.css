@@ -1,12 +1,16 @@
 /*screens*/
 @import "screens/index.css";
 @import "screens/home-status.css";
-@import "screens/home-adv.css";
 @import "screens/home-acts.css";
+@import "screens/study.css";
+@import "screens/study-others.css";
+
+
 
 
 /*components */
 @import "components/header.css";
+@import "components/row-adv.css";
 
 
 
