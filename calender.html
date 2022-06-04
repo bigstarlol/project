@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홈</title>
+    <title>일정</title>
     
 </head>
 <body>
@@ -33,110 +33,39 @@
         </div>
     </div>
 
-    <main class="main-home">
-        <div class="home-status">
-            <div class="home-status__study">
-                <h1 class="home-status__study-name">참여 중 스터디</h1>
-                <div class="home-status__study-boxes">
-                    <div class="entered_study">
-                        <span class="box-name">한국전력</span>
-                        <i class="fa-solid fa-book-open"></i>
-                        <div class="main-study__icons">
-                            <div class="main-study__icons-date">
-                                <span class="box-date">22/5/30</span>
-                                <span class="box-date">10:30</span>
-                            </div>
-                            <div class="main-study__icons-teammates">
-                                <i class="fa-solid fa-user"></i>
-                                <span>2</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entered_study">
-                        <span class="box-name">한국금융공단</span>
-                        <i class="fa-solid fa-book-open"></i>
-                        <div class="main-study__icons">
-                            <div class="main-study__icons-date">
-                                <span class="box-date">22/5/30</span>
-                                <span class="box-date">10:30</span>
-                            </div>
-                            <div class="main-study__icons-teammates">
-                                <i class="fa-solid fa-user"></i>
-                                <span>6</span>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="entered_study">
-                        <span class="box-name">남동발전</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <div class="main-study__icons">
-                            <div class="main-study__icons-date">
-                                <span class="box-date">22/5/30</span>
-                                <span class="box-date">10:30</span>
-                            </div>
-                            <div class="main-study__icons-teammates">
-                                <i class="fa-solid fa-user"></i>
-                                <span>5</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entered_study">
-                        <span class="box-name">경남개발공사</span>
-                        <i class="fa-solid fa-book-open"></i>
-                        <div class="main-study__icons">
-                            <div class="main-study__icons-date">
-                                <span class="box-date">22/5/30</span>
-                                <span class="box-date">10:30</span>
-                            </div>
-                            <div class="main-study__icons-teammates">
-                                <i class="fa-solid fa-user"></i>
-                                <span>1</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="entered_study">
-                        <span class="box-name">안전보건공단</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <div class="main-study__icons">
-                            <div class="main-study__icons-date">
-                                <span class="box-date">22/5/30</span>
-                                <span class="box-date">10:30</span>
-                            </div>
-                            <div class="main-study__icons-teammates">
-                                <i class="fa-solid fa-user"></i>
-                                <span>3</span>
-                            </div>                            
-                        </div>
-                    </div>
+    <main class="main-calender">
+
+            <div class="calender">
+                <h1 class="calender-name">채용일정</h1>
+
+                <div class="calender-options">
+                    설정
+                    관심기업 표시<!--누르면 관심업종선택 및 특정 기업 검색-->
+                    지원가능 기업 표시
                 </div>
-            </div>
 
-            <div class="home-status__jobopen">
-                <h1 class="home-status__study-name">참여 중 채용 일정</h1>
-
-                <div class="home-status__calander">
-                    <div class="home-status__calander-month">
+                <div class="calender-div">
+                    <div class="calender-month">
                         <span><i class="fa-solid fa-caret-left"></i></span>
-                        <input class="home-status__calander-month-select" type="month">
+                        <input class="calender-month-select" type="month">
                         <span><i class="fa-solid fa-caret-right"></i></span>
                     </div>
 
-                <table class="home-status__jobopen-table">
-                    <thead class="home-status__jobopen-table-head">
-                        <tr class="home-status__jobopen-table-tr">
-                            <th class="home-status__jobopen-table-th">일<span>sun</span></th>
-                            <th class="home-status__jobopen-table-th">월<span>mon</span></th>
-                            <th class="home-status__jobopen-table-th">화<span>tue</span></th>
-                            <th class="home-status__jobopen-table-th">수<span>wen</span></th>
-                            <th class="home-status__jobopen-table-th">목<span>tus</span></th>  
-                            <th class="home-status__jobopen-table-th">금<span>fri</span></th>  
-                            <th class="home-status__jobopen-table-th">토<span>sat</span></th>  
+                    <table class="calender-table">
+                    <thead class="calender-table-head">
+                        <tr class="calender-table-tr">
+                            <th class="calender-table-th">일<span>sun</span></th>
+                            <th class="calender-table-th">월<span>mon</span></th>
+                            <th class="calender-table-th">화<span>tue</span></th>
+                            <th class="calender-table-th">수<span>wen</span></th>
+                            <th class="calender-table-th">목<span>tus</span></th>  
+                            <th class="calender-table-th">금<span>fri</span></th>  
+                            <th class="calender-table-th">토<span>sat</span></th>  
                         </tr>
                     </thead>
-                    <tbody class="home-status__jobopen-table-body">
-                        <tr class="home-status__jobopen-table-tr">
-                            <td class="home-status__jobopen-table-td">
+                    <tbody class="calender-table-body">
+                        <tr class="calender-table-tr">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">1</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -146,7 +75,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">2</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -156,7 +85,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">3</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -166,7 +95,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">4</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -176,7 +105,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">5</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -186,7 +115,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">6</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -196,7 +125,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">7</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -207,8 +136,8 @@
                                 </ul>
                             </td>
                         </tr>
-                        <tr class="home-status__jobopen-table-tr">
-                            <td class="home-status__jobopen-table-td">
+                        <tr class="calender-table-tr">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">8</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -218,7 +147,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">9</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -228,7 +157,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">10</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -238,7 +167,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">11</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -248,7 +177,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">12</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -258,7 +187,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">13</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -268,7 +197,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">14</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -280,8 +209,8 @@
                             </td>
                         </tr>
 
-                        <tr class="home-status__jobopen-table-tr">
-                            <td class="home-status__jobopen-table-td">
+                        <tr class="calender-table-tr">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">15</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -291,7 +220,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">16</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -301,7 +230,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">17</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -311,7 +240,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">18</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -321,7 +250,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">19</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -331,7 +260,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">20</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -341,7 +270,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">21</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -353,8 +282,8 @@
                             </td>
                         </tr>
 
-                        <tr class="home-status__jobopen-table-tr">
-                            <td class="home-status__jobopen-table-td">
+                        <tr class="calender-table-tr">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">22</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -364,7 +293,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">23</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -374,7 +303,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">24</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -384,7 +313,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">25</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -394,7 +323,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">26</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -404,7 +333,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">27</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -414,7 +343,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">28</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -426,8 +355,8 @@
                             </td>
                         </tr>
 
-                        <tr class="home-status__jobopen-table-tr">
-                            <td class="home-status__jobopen-table-td">
+                        <tr class="calender-table-tr">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">29</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -437,7 +366,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">30</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -447,7 +376,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td">
+                            <td class="calender-table-td">
                                 <span class="jobopen-table-date">31</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -457,7 +386,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td not-this-month">
+                            <td class="calender-table-td not-this-month">
                                 <span class="jobopen-table-date">1</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -467,7 +396,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td not-this-month">
+                            <td class="calender-table-td not-this-month">
                                 <span class="jobopen-table-date">2</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -477,7 +406,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td not-this-month">
+                            <td class="calender-table-td not-this-month">
                                 <span class="jobopen-table-date">3</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -487,7 +416,7 @@
                                     <li class="jobopen-table-list fif-list"><span><i class="fa-solid fa-ellipsis-vertical"></i></span></li>
                                 </ul>
                             </td>
-                            <td class="home-status__jobopen-table-td not-this-month">
+                            <td class="calender-table-td not-this-month">
                                 <span class="jobopen-table-date">4</span>
                                 <ul class="jobopen-table-ul">
                                     <li class="jobopen-table-list fir-list">한국전력</li>
@@ -499,94 +428,14 @@
                             </td>
                         </tr>
                     </tbody>
-                </table>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="line">
-            
-        </div>
-
-        <div class="home-acts">
-            <h1>활동개요</h1>
-
-            <div class="home-acts__study">
-                <div class="home-acts__study-contents">
-                    <div class="home-acts__study-study">
-                        <span class="acts-name">공부량</span>
-                        <div class="home-acts__study-study-subject">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span class="subject-name">NCS</span>
-                        </div>
-                        <div class="home-acts__study-study-time">
-                            <span class="study-time-today">오늘 : 7시간 32분</span>
-                            <span class="study-time-week">이번주 : 32시간 17분</span>
-                        </div>
-                    </div>
-
-                    <div class="home-acts__study-goal">
-                        <span class="acts-name">목표</span>
-                        <div class="home-acts__study-goal-subject">
-                            <i class="fa-solid fa-bullseye"></i>
-                            <span class="subject-name">92%</span>
-                        </div>
-                        <div class="home-acts__study-goal-target">
-                            <span class="study-goal-today">오늘 : 92%</span>
-                            <span class="study-goal-final">최종 : 취뽀!</span>
-                        </div>
-                    </div>
-
-                    <div class="home-acts__study-homework">
-                        <span class="acts-name">오늘의 과제</span>
-                        <div class="home-acts__study-homework-subject">
-                            <i class="fa-solid fa-star"></i>
-                            <span class="homeworks-left">끝</span>
-                        </div>
-                    </div>
+                    </table>
                 </div>
             </div>
 
-            <div class="home-acts__cons">
-                <h4 class="home-acts-title">진행상황</h4>
-                <div class="home-acts__goal">
-                    <h5 class="home-acts-subtitle">목표기업</h4>
-                    <span>공기업 전체</span>
-                    <span>한국전력공사</span>
-                    <span>국가철도공단</span>
-                    <span>삼성전자</span>
-                    <span>경남개발공사</span>
-                </div>
 
-                <div class="home-acts__looking">
-                    <h5 class="home-acts-subtitle">현재 지원가능 기업</h4>
-                    <span>한국전력공사</span>
-                    <span>국가철도공단</span>
-                    <span>삼성전자</span>
-                    <span>경남개발공사</span>
-                </div>
-    
-                <div class="home-acts__jasoseo">
-                    <h5 class="home-acts-subtitle">자소서</h4>
-                    <span>한국전력공사</span>
-                    <span>국가철도공단</span>
-                    <span>삼성전자</span>
-                    <span>경남개발공사</span>
-                </div>
 
-                <div class="home-acts__advance">
-                    <h5 class="home-acts-subtitle">달성률</h4>
-                    <div>
-                        <span>서류합격</span>
-                    </div>
-                    <div>
-                        <span>필기합격</span>
-                    </div>
-                </div>
 
-            </div>
-        </div>
+
     </main>
     
 

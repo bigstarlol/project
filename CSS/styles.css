@@ -4,13 +4,14 @@
 @import "screens/home-acts.css";
 @import "screens/study.css";
 @import "screens/study-others.css";
-
-
+@import "screens/calender.css";
+@import "screens/user.css";
 
 
 /*components */
 @import "components/header.css";
 @import "components/row-adv.css";
+@import "components/nav.css";
 
 
 
