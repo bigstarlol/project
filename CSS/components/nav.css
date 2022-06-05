@@ -1,6 +1,4 @@
 .nav__bar {
-    position: absolute;
-    bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,6 +8,7 @@
     border-top: 1px solid rgba(0,0,0,0.1);
     height: 150px;
     background-color: white;
+    margin-top: 200px;
 }
 
 .nav__bar-image {

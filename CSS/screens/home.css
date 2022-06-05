@@ -1,0 +1,311 @@
+.main-home {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    z-index: 1;
+}
+
+.home-status {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.home-status__study,
+.home-status__jobopen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+    margin-bottom: 100px;
+    border: 3px solid var(--personal-main);
+
+}
+
+.home-status__study-name {
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top:-25px;
+    left: 15px;
+    background-color: white;
+}
+
+.home-status__study-boxes {
+    display: flex;
+    margin: 50px 0px 50px 0px;
+    box-sizing: border-box;
+}
+
+.entered_study {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--personal-sub);
+    position: relative;
+}
+
+.entered_study .box-name {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: white;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+}
+
+.entered_study .fa-book-open,
+.entered_study .fa-people-group {
+    font-size: 35px;
+    color: var(--personal-main);
+}
+
+.main-study__icons {
+    display: flex;
+    width: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+}
+
+.main-study__icons-date {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.box-date {
+    display: flex;
+    font-size: 5px;
+}
+
+.main-study__icons-teammates {
+    display: flex;
+    position: relative;
+}
+
+.main-study__icons-teammates span {
+    display: flex;
+    font-size: 10px;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    right: -8px;
+    top: -8px;
+}
+
+/*home-status end*/
+
+.home-notes {
+    border: 3px solid var(--personal-main);
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.home-notes h1 {
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top:-25px;
+    left: 15px;
+    background-color: white;
+}
+
+.home-notes__contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-notes__note {
+    display: flex;
+    border: 1px solid var(--personal-sub);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-right: 50px;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-notes__note:last-child {
+    margin-right: 0px;
+}
+
+.home-notes__note-name {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home-notes__note-name i {
+    font-size: 100px;
+    color: var(--personal-main);
+}
+
+.home-notes__note-name h4 {
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    top:5px;
+    font-weight: 600;
+}
+
+.home-notes__note-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 5px;
+}
+
+.home-notes__note-content ul:first-child {
+    margin-right: 5px;
+}
+
+.home-notes__note-content li {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/*home-notes end*/
+
+.home-acts {
+    border: 3px solid var(--personal-main);
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.home-acts h1 {
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    top:-25px;
+    left: 15px;
+    background-color: white;
+}
+
+.home-acts h4 {
+    font-size: 22px;
+}
+
+.home-acts__cons,
+.home-acts__study {
+    border: 1px solid var(--personal-sub);
+    position: relative;
+}
+
+.home-acts__study-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.home-acts__study-study,
+.home-acts__study-goal {
+    margin-right: 50px;
+}
+
+.home-acts__study-homework,
+.home-acts__study-goal,
+.home-acts__study-study {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--personal-sub);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-acts__study-homework-subject,
+.home-acts__study-goal-subject,
+.home-acts__study-study-subject {
+    position: relative;
+}
+
+.home-acts__study-homework-subject,
+.home-acts__study-goal-subject,
+.home-acts__study-study-subject i {
+    font-size: 100px;
+    color: var(--personal-main);
+}
+
+.subject-name {
+    position: absolute;
+    top:10px;
+    left: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.acts-name {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white;
+}
+
+.home-acts__study-goal-target,
+.home-acts__study-study-time {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+
+.homeworks-left {
+    color: white;
+    background-color: red;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.home-acts-title {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white;
+    font-weight: 600;
+}
