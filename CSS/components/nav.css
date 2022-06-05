@@ -7,8 +7,8 @@
     width: 100%;
     border-top: 1px solid rgba(0,0,0,0.1);
     height: 150px;
-    background-color: white;
-    margin-top: 200px;
+    background-color: #FAFAFA;
+    margin-top: 300px;
 }
 
 .nav__bar-image {
@@ -43,5 +43,5 @@
 }
 
 .nav__bar-sns a {
-    margin-left: 10px;
+    margin-right: 20px;
 }

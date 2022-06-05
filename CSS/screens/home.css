@@ -1,311 +1,413 @@
-.main-home {
-    margin-left: 30px;
+/* 스터디 */
+
+.home-study {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: center;
-    z-index: 1;
+    margin-top: 100px;
 }
 
-.home-status {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-}
-
-.home-status__study,
-.home-status__jobopen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  
-    position: relative;
-    margin-bottom: 100px;
-    border: 3px solid var(--personal-main);
-
-}
-
-.home-status__study-name {
+.home-study h1 {
     font-size: 30px;
     font-weight: 600;
-    position: absolute;
-    top:-25px;
-    left: 15px;
-    background-color: white;
 }
 
-.home-status__study-boxes {
+.home-study h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.5);
+    margin-top: 30px;
+}
+
+.home-study-boxes {
+    margin-top: 50px;
     display: flex;
-    margin: 50px 0px 50px 0px;
-    box-sizing: border-box;
 }
 
 .entered_study {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-right: 30px;
-    width: 150px;
-    height: 150px;
-    border: 1px solid var(--personal-sub);
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 280px;
+    height: 200px;
+    margin-right: 25px;
+    border-radius: 5px;
+    padding: 20px;
+    justify-content: space-between;
     position: relative;
 }
 
-.entered_study .box-name {
-    font-size: 13px;
-    font-weight: 600;
-    background-color: white;
-    position: absolute;
-    top: -10px;
-    left: 0px;
+.entered_study:last-child {
+    margin-right: 0px;
 }
 
-.entered_study .fa-book-open,
-.entered_study .fa-people-group {
-    font-size: 35px;
-    color: var(--personal-main);
+.box-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.box-name h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.box-name span{
+    font-size: 12px;
+}
+
+
+.box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+.box-icon span {
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgba(0,0,0,0.6);
+
 }
 
 .main-study__icons {
     display: flex;
-    width: 80px;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 5px;
+    font-size: 14px;
 }
 
 .main-study__icons-date {
-    display: flex;
-    flex-direction: column;
-    align-items:flex-end;
+    color: rgba(0,0,0,0.6);
 }
 
-.box-date {
-    display: flex;
-    font-size: 5px;
-}
-
+.main-study__icons-homeworks,
+.main-study__icons-chats,
 .main-study__icons-teammates {
     display: flex;
     position: relative;
+    margin-left: 20px;
+    font-size: 16px;
 }
 
+.main-study__icons-homeworks span,
+.main-study__icons-chats span,
 .main-study__icons-teammates span {
     display: flex;
-    font-size: 10px;
-    border-radius: 50%;
-    width: 13px;
-    height: 13px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 600;
-    background-color: rgba(0,0,0,0.8);
     position: absolute;
-    right: -8px;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 600;
     top: -8px;
+    right: -8px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+
 }
 
-/*home-status end*/
+.main-study__icons-homeworks span,
+.main-study__icons-chats span {
+    background-color: rgb(255, 153, 153);
+    border: none;
+}
+
+.box-alert {
+    display: flex;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 20px;
+    color: rgba(0,0,0,0.5);
+}
+
+.entered_study-create {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.6);
+}
+
+/* 오답노트 */
 
 .home-notes {
-    border: 3px solid var(--personal-main);
-    width: 80%;
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative;
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
 }
 
 .home-notes h1 {
     font-size: 30px;
     font-weight: 600;
-    position: absolute;
-    top:-25px;
-    left: 15px;
-    background-color: white;
+}
+
+.home-notes h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.5);
+    margin-top: 30px;
 }
 
 .home-notes__contents {
+    margin-top: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .home-notes__note {
     display: flex;
-    border: 1px solid var(--personal-sub);
+    margin-right: 50px;
+    position: relative;
+}
+
+.home-notes__note-close {
+    display: flex;
+    position: relative;
+}
+
+.home-notes__note-close i{
+    font-size: 200px;
+    color: rgba(0,0,0,0.6);    
+}
+
+.home-notes__note-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10px;
+    color: white;
     height: 200px;
     width: 200px;
-    position: relative;
-    margin-right: 50px;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    justify-content: center;
 }
 
-.home-notes__note:last-child {
-    margin-right: 0px;
-}
-
-.home-notes__note-name {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    position: relative;
-}
-
-.home-notes__note-name i {
-    font-size: 100px;
-    color: var(--personal-main);
-}
-
-.home-notes__note-name h4 {
-    position: absolute;
-    font-size: 12px;
-    color: white;
-    top:5px;
+.home-notes__note-title h4 {
+    font-size: 20px;
     font-weight: 600;
 }
 
-.home-notes__note-content {
+.home-notes__note-subtitle {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 70px;
+}
+
+.home-notes__note-subtitle span:first-child {
+    margin-bottom: 5px;
+}
+
+.home-notes__note-create {
+    display: flex;
+    font-size: 30px;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 5px;
+    border: 1px dashed rgba(0,0,0,0.1);
+    color: rgba(0,0,0,0.6);
+    width: 200px;
 }
 
-.home-notes__note-content ul:first-child {
-    margin-right: 5px;
+/* 활동개요 */
+.home-acts__homework,
+.home-acts__study {
+    position: relative;
 }
-
-.home-notes__note-content li {
-    font-size: 12px;
-    margin-top: 5px;
-}
-
-
-/*home-notes end*/
 
 .home-acts {
-    border: 3px solid var(--personal-main);
-    width: 80%;
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
 }
 
 .home-acts h1 {
     font-size: 30px;
     font-weight: 600;
-    position: absolute;
-    top:-25px;
-    left: 15px;
-    background-color: white;
 }
 
-.home-acts h4 {
-    font-size: 22px;
+.home-acts h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.5);
+    margin-top: 30px;
 }
 
-.home-acts__cons,
-.home-acts__study {
-    border: 1px solid var(--personal-sub);
-    position: relative;
-}
-
-.home-acts__study-contents {
+.home-acts__contents {
+    margin-top: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.home-acts__study,
+.home-acts__goal,
+.home-acts__homework {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 300px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
     padding: 20px;
 }
 
-.home-acts__study-study,
-.home-acts__study-goal {
-    margin-right: 50px;
-}
-
-.home-acts__study-homework,
-.home-acts__study-goal,
-.home-acts__study-study {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--personal-sub);
-    width: 200px;
-    height: 200px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-acts__study-homework-subject,
-.home-acts__study-goal-subject,
-.home-acts__study-study-subject {
-    position: relative;
-}
-
-.home-acts__study-homework-subject,
-.home-acts__study-goal-subject,
-.home-acts__study-study-subject i {
-    font-size: 100px;
-    color: var(--personal-main);
-}
-
-.subject-name {
-    position: absolute;
-    top:10px;
-    left: 10px;
-    color: white;
-    font-size: 12px;
+.home-acts__study,
+.home-acts__homework {
+    margin-right: 30px;
 }
 
 .acts-name {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.home-acts__study-goal-target,
-.home-acts__study-study-time {
+.home-acts__study-subjects {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 5px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.home-acts__study-subjects h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.home-acts__study-subject-time {
+    display: flex;
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.home-acts__study-subject {
+    margin-bottom: 10px;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.home-acts__study-subject-time ul {
+    margin-right: 8px;
+}
+
+.home-acts__study-subject-time li {
+    margin-bottom: 5px;
+}
+
+.sum {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    justify-content: center;
+    margin-top: 30px;
+    border-right: none;
     position: absolute;
-    bottom: 2px;
-    left: 2px;
+    bottom: 5px;
 }
 
-.homeworks-left {
-    color: white;
-    background-color: red;
-    font-size: 13px;
+.sum h5 {
+    color: tomato;
+    font-size: 186x;
     font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.sum-time {
+    font-size: 14px;
+}
+
+.home-acts__homework-subject {
+    display: flex;
+    margin-top: 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 150px;
+    height: 70px;
+    padding: 10px;
+}
+
+.home-acts__homework-subject-study {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-acts__homework-subject-study h5 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.home-acts__homework-subject-study-sub {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+.home-acts__homework-subject-study a{
+    display: flex;
+}
+
+.home-acts__homework-subject-study i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.home-acts__homework-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-acts__homework-subject-sum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: none;
+    position: absolute;
+    bottom: 10px;
+}
+
+.home-acts__homework-subject-sum h5{
+    color: tomato;
+    font-size: 186x;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.home-acts__goal-subject {
+    margin-left: 5px;
+}
+
+.home-acts__homework-subject-sum-contents {
+    display: flex;
+    font-size: 14px;
+    margin-left: 5px;
+
+}
+
+.home-acts__homework-subject-sum-contents ul {
+    margin-right: 8px;
+}
+
+.home-acts__homework-subject-sum-contents li {
+    margin-bottom: 5px;
+}
+
+.home-acts__goal-subject {
+    margin-top: 10px;
+}
+
+.home-acts__goal-subject h5 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.home-acts__goal-subject ul {
+    margin-top: 5px;
+}
+
+.home-acts__goal-subject li {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
-    top: -8px;
-    right: -8px;
-}
-
-.home-acts-title {
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    background-color: white;
-    font-weight: 600;
+    font-size: 12px;
+    margin-left: 5px;
 }

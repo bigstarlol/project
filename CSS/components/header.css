@@ -1,46 +1,46 @@
 .homepage-header {
     display: flex;
-    height: 80px;
+    flex-direction: column;
+    height: auto;
     width: 100%;
-    background-color: var(--personal-main);
-    padding: 20px;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0px;
-    left: 0px;
     z-index: 5;
+    position: relative;
+    padding: 10px 32px 0px 32px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-.homepage-header__company,
-.homepage-header__logo,
-.homepage-header__pages {
-    width: 33%;
+.homepage-header__login {
     display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
 }
 
-.homepage-header__logo {
+.homepage-header__login a {
+    margin-left: 20px;
+}
+
+.homepage-header__banner {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 30px;
     justify-content: center;
 }
 
-.homepage-header__pages {
+.homepage-header__list {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    padding: 15px 32px;
 }
 
-.homepage-header__pages a{
-    margin-left: 35px;
-    font-size: 30px;
-    color: white;
-}
-
-.homepage-header__pages a:last-child {
-    text-align: center;
-    width: 35px;
-    height: 35px;
-    border: 5px solid white;
-    border-radius: 50%;
-    background-color: var(--personal-sub);
+.homepage-header__list a {
+    font-size: 16px;
+    font-weight: 800;
+    margin-right: 30px;
 }
