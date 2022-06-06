@@ -24,7 +24,8 @@
 
     <header class="homepage-header__list">
         <div class="homepage-header__pages">
-            <a href="study-mine.html">스터디</a>
+            <a href="home.html">홈</a>
+            <a href="study-others.html">스터디</a>
             <a href="notes.html">오답노트</a>
             <a href="*">매거진</a>
         </div>
@@ -35,291 +36,890 @@
             <a href="study-mine.html"><h2>나의 스터디</h2></a>
         </div>
         <div class="study-tab__others">
-            <a href="study-others.html"><h2>스터디</h2></a>
+            <a href="study-others.html"><h2>모집 스터디</h2></a>
         </div>
     </div>
 
-    <main class="main-home">
-        <div class="home-status">
-            <div class="study-others-main">
-                <h1 class="study-main-title">모집 중 스터디</h1>
-                <div class="study-others-main__buttons">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
+    <main class="main-study">
+        <div class="study-create">
+            <a href="*">
+                <span>스터디 생성</span>
+                <i class="fa-solid fa-plus"></i>
+            </a>
+        </div>
 
-                <div class="study-others-main__contents row">
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
-                    </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
-                    </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
-                    </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="study-search">
+            <div class="study-search__filter">
+                <i class="fa-solid fa-filter"></i>
+                <label for="filter">과목</label>
+                <select name="" id="filter">
+                    <option value="">전체</option>
+                    <option value="">NCS</option>
+                    <option value="">전공</option>
+                    <option value="">자격증</option>
+                    <option value="">어학</option>                                            
+                </select>
 
-                <div class="study-others-main__contents row">
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
+                <label for="filter-detail">세부과목</label>
+                <select name="" id="filter-detail">
+                    <option value="">전체</option>
+                    <option value="">psat</option>
+                    <option value="">module</option>
+                    <option value="">문제해결</option>
+                    <option value="">수학능력</option>                                           
+                </select>
+            </div>
+
+            <form class="study-search__search" action="">
+                <input type="text" placeholder="원하는 스터디를 찾아보세요">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+
+        <div class="study-list">
+            <div class="study-list__title">
+                <h1 class="study-list-name">검색결과</h1>
+                <h6 class="study-list-name__sub">나에게 맞는 스터디에 가입하세요!</h6>
+            </div>
+
+            <div class="study-list-boxes">
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
                         </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
                         </div>
                     </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
-                    </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
-                    </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
                     </div>
                 </div>
 
-                <div class="study-others-main__contents row">
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
                         </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
                         </div>
                     </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
-                    </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
-                    </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
                     </div>
                 </div>
 
-                <div class="study-others-main__contents row">
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
                         </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
                         </div>
                     </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
-                    </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
-                    </div>
-    
-                    <div class="study-others-main__studyroom">
-                        <div class="study-others-main__studyroom-icon">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>스터디명</span>
-                        </div>
-                        <div class="study-others-main__studyroom-contents">
-                                <ul class="study-others-main__studyroom-content">
-                                    <li>종류 : 취업</li>
-                                    <li>과목 : NCS</li>
-                                    <li>참가인원 : 3/6</li>
-                                    <li>온라인</li>
-                                    <li>개설일시 : 22/05/22</li>
-                                </ul>
-                        </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
                     </div>
                 </div>
-                    
+
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
                 </div>
-                
 
             </div>
+
+            <div class="study-list-boxes">
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="study-list-boxes-more">
+                <i class="fa-solid fa-ellipsis"></i>
+                <span>더보기</span>
+            </div>
         </div>
+
+        <div class="study-list recomended">
+                <div class="study-list__title">
+                    <h1 class="study-list-name">추천</h1>
+                    <h6 class="study-list-name__sub">나에게 맞는 스터디에 가입하세요!</h6>
+                </div>
+            
+            <div class="study-list-boxes">
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="study-list-boxes">
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+
+                <div class="study-list-boxes-box">
+                    <div class="box-name">
+                        <a href="*">
+                            <h4>한국금융공단</h4>
+                        </a>
+                        <span>ncs:psat</span>
+                    </div>
+                    <div class="box-icon">
+                        <span>프리미엄 가입 합니다 ^^</span>
+                    </div>
+
+
+                    <div class="study-list-boxes-box__icons">
+                        <div class="study-list-boxes-box__icons-date">
+                            <span class="box-date">생성일시</span>
+                            <span class="box-date">22/5/30</span>
+                        </div>
+                        <div class="study-list-boxes-box__icons">
+                            <div class="study-list-boxes-box__icons-homeworks">
+                                <a href="*">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span><i class="fa-solid fa-check"></i></span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-chats">
+                                <a href="*">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <span>on</span>
+                                </a>
+                            </div>
+                            <div class="study-list-boxes-box__icons-teammates">
+                                <a href="*">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>3/6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-alert">
+                            <a href="*">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="study-progress">
+                        <a href="*">가입신청</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="study-list-boxes-more">
+                <i class="fa-solid fa-ellipsis"></i>
+                <span>더보기</span>
+            </div>
+        </div>
+
     </main>
     
-
+    <nav class="nav__bar">
+        <div class="nav__bar-contents">
+            <div class="nav__bar-company">
+                <h6>회사이름</h6>
+                <span>경상남도 창원시 어쩌구 어쩔동</span>
+                <span>사업자등록번호 205-51-81532 | 통신판매업 2022-경남-90123</span>
+                <span>대표 김병준 | 개인정보 보호책임자 김병준</span>
+                <span>문의전화 055-548-8085 | junes19@naver.com</span>
+            </div>
+    
+            <div class="nav__bar-sns">
+                <a href="*"><i class="fa-brands fa-instagram"></i></a>
+                <a href="*"><i class="fa-brands fa-youtube"></i></a>
+                <a href="*"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="nav__bar-law">
+                <a href="*">이용약관</a>
+                <a href="*">개인정보처리방침</a>
+                <a href="*">운영정책</a>
+                <a href="*">문의</a>
+        </div>
+    </nav>
 
     <script src="https://kit.fontawesome.com/854ea81dbe.js" crossorigin="anonymous">
 </script>
