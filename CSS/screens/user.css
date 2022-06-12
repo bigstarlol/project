@@ -1,6 +1,6 @@
 .main-user {
     display: flex;
-    margin-top: 200px;
+    margin-top: 100px;
     width: 80%;
     align-items: center;
     justify-content: center;
@@ -71,7 +71,7 @@
 
 .user-profile__premium {
     display: flex;
-    border: 1px solid var(--personal-sub);
+    border: 1px solid rgba(0,0,0,0.1);
     width: 800px;
     height: 400px;
     margin-top: 50px;

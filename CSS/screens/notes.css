@@ -1,201 +1,173 @@
-.main-notes {
-    margin-left: 30px;
+.notes-others,
+.notes-mine {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: center;
-    z-index: 1;
-}
-
-.main-notes__analysis {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    border: 3px solid var(--personal-main);
-    flex-direction: column;
+    margin-top: 100px;
+    width: 1200px;
     position: relative;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-    box-sizing: border-box;
 }
 
-.analysis-name {
+.notes-others h1,
+.notes-mine h1 {
     font-size: 30px;
     font-weight: 600;
-    position: absolute;
-    top:-25px;
-    left: 15px;
-    background-color: white;
 }
 
-.analysis-maded__summary i {
-    font-size: 50px;
-    color: var(--personal-main);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-}
-
-.main-notes__analysis-maded {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--personal-main);
-    width: 80%;
-    height: 150px;
-    margin-top: 50px;
-    position: relative;
-    padding-bottom: 50px;
-}
-
-.analysis-maded__print,
-.analysis-maded__print-line,
-.analysis-maded__summary {
-    display: flex;
-    margin-right: 20px;
-}
-
-.analysis-maded__summary {
-    
-}
-
-.main-notes__analysis-maded li {
-    margin-right: 10px;
-    margin-bottom: 8px;
-}
-
-.main-notes__analysis-maded li:last-child {
-    margin-right: 00px;
-    margin-bottom: 0px;
-}
-
-.analysis-maded__print {
-    border: 1px solid var(--personal-sub);
-    height: 100px;
-    width: 600px;
-    align-items: center;
-    justify-content: center;
-}
-
-.analysis-maded__advise {
-    display: flex;
-    position: absolute;
-    width: 30%;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 20px;
-}
-
-.analysis-maded__advise-advises {
-    width: 50%;
-}
-
-.analysis-maded__advise h4 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.sub-title {
-    font-weight: 600;
-}
-
-/* 분석 파트 끝 */
-
-.main-notes__contents {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    border: 3px solid var(--personal-main);
-    flex-direction: column;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.contents-name {
-    font-size: 30px;
-    font-weight: 600;
-    position: absolute;
-    top:-25px;
-    left: 15px;
-    background-color: white;
-}
-
-.main-notes__maded {
-    display: flex;
-    border: 1px solid var(--personal-main);
-    width: 80%;
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative;
-    margin-top: 50px;
-}
-
-.notes-name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 150px;
-    border: 1px solid var(--personal-sub);
-    margin-right: 30px;
-}
-
-.notes-name h4 {
+.notes-others h6,
+.notes-mine h6 {
     font-size: 18px;
     font-weight: 600;
+    color: rgba(0,0,0,0.5);
+    margin-top: 30px;
+}
+
+.notes-mine__newnote {
+    position: absolute;
+    font-size: 14px;
+    right: 5px;
+    top: 50px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.notes-others__row,
+.notes-mine__row {
+    display: flex;
+}
+
+.notes-others__note,
+.notes-mine__note {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px 0px 20px;
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 360px;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.notes-others__note-name,
+.notes-mine__note-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.notes-others__note-name h4,
+.notes-mine__note-name h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.notes-others__note-name h5,
+.notes-mine__note-name h5 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.notes-others__note-name span,
+.notes-mine__note-name span {
+    font-size: 10px;
+}
+
+.notes-mine__note-collect {
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.notes-others__note-subjects,
+.notes-mine__note-subjects {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
-.notes-name i {
-    font-size: 100px;
-    color: var(--personal-main);
-}
-
-.notes-discription {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.notes-discription li {
+.start,
+.notes-mine__note-start {
     font-size: 18px;
-    margin-right: 10px;
-    margin-bottom: 8px;
+    font-weight: 600;
+    color: tomato;
 }
 
-.notes-discription li:last-child {
-    margin-bottom: 0px;
-}
-
-.notes-acts {
-    font-size: 25px;
-    position: absolute;
-    right: 10px;
-
-}
-
-.notes-acts i {
-    margin-right: 10px;
-}
-
-.main-notes__analysis-creates,
-.main-notes__create {
+.new-note {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
-    width: 60px;
-    height: 60px;
-    border: 5px solid var(--personal-main);
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    color: rgba(0,0,0,0.2);
+    border: 1px dashed rgba(0,0,0,0.2);
 }
+
+.row-end {
+    margin-right: 0px;
+}
+
+/* 노트빌려쓰기 시작*/
+
+.notes-search {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+
+.notes-search__search {
+    display: flex;
+    align-items: center;
+}
+
+.notes-search input {
+    width: 300px;
+    height: 32px;
+    border: none;
+    font-size: 18px;
+}
+
+.notes-search input::placeholder {
+    color: rgba(0,0,0,0.3);
+}
+
+.notes-search button {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    color: rgba(0,0,0,0.6);
+}
+
+.notes-search__filter {
+    display: flex;
+    align-items: center;
+}
+
+.notes-search__filter i {
+    font-size: 20px;
+    color: rgba(0,0,0,0.6);
+}
+
+#filter,
+#filter-detail {
+    font-size: 12px;
+    width: 100px;
+    height: auto;
+    border: none;
+    color: rgba(0,0,0,0.6);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.notes-search__filter label {
+    font-size: 16px;
+    color: rgba(0,0,0,0.8);
+    margin: 0px 10px;
+}
+
+.notes-search__filter select {
+    margin-right: 20px;
+}
+
+/* 검색 끝 */

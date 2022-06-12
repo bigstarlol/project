@@ -1,0 +1,112 @@
+.magazine-columns {
+    margin-top: 20px;
+    display: flex;
+    height: 600px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.magazine-columns__main-column {
+    display: flex;
+    width: 600px;
+}
+
+.magazine-columns__main-column h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.magazine-columns__main-column p{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.magazine-columns__main-column-column1-img img{
+    width: 600px;
+    height: 360px;
+}
+
+.magazine-columns__main-column-column2 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.magazine-columns__main-column-column2-img img{
+    width: 280px;
+    height: 170px;
+}
+
+.magazine-columns__main-column-column3 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.magazine-columns__main-column-column3-contents {
+    display: flex;
+    margin-top: 10px;
+}
+
+.magazine-columns__main-column-column3-1 h5 {
+    margin-top: 0px;
+}
+
+.magazine-columns__main-column-column3-contents img {
+    width: 130px;
+    height: 80px;
+}
+
+.magazine-columns__main-column-column3-contents p {
+    margin: 0px 10px;
+}
+
+.magazine-columns__main-column-column3-1 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.magazine-columns__subcolumn {
+    display: flex;
+    margin-top: 50px;
+}
+
+.magazine-columns__subcolumn-columns {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding-right: 10px;
+}
+
+.magazine-columns__subcolumn-columns-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.magazine-columns__subcolumn-columns-column h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.magazine-columns__subcolumn-columns-column-contents {
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.magazine-columns__subcolumn-columns-column-contents p {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.magazine-columns__subcolumn-columns-column-contents img {
+    width: 300px;
+    height: 180px;
+}
